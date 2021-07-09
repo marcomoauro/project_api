@@ -1,5 +1,4 @@
 const db = require('../db')
-const { getJobsByProjectId } = require('../job/finder')
 
 // next step can be to introduce pagination to avoid heavy requests to db
 const getProjects = async () => {

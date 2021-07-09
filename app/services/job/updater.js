@@ -2,7 +2,7 @@ const logger = require('../logger')
 const db = require('../db')
 
 const updateJob = async (id, params) => {
-  logger.info(`Job::Creator::updateJob id: ${id} ,params: ${JSON.stringify(params)}`)
+  logger.info(`Job::Updater::updateJob id: ${id}, params: ${JSON.stringify(params)}`)
   const [updateQuery, paramsValues] = buildQuery(id, params)
   await db.query(updateQuery, paramsValues)
   const findResults = await db.query(
