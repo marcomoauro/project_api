@@ -6,10 +6,10 @@ const app = express()
 
 require('dotenv').config()
 
-// middlewares for parse body in JSON
+// middleware for parse body in JSON
 app.use(bodyParserMiddleware)
 
-// middlewares to log each request with method (GET, POST, ..) and url (without querystring)
+// middleware to log each request with method (GET, POST, ..) and url (without querystring)
 app.use(requestLoggerMiddleware)
 
 //routes

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Crud api for project and jobs entities",
   "main": "index.js",
+  "engines": {
+    "node": ">=14.17"
+  },
   "scripts": {
     "start": "node app.js"
   },
