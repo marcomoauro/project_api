@@ -14,8 +14,7 @@ const updateJob = async (id, params) => {
 }
 
 const buildQuery = (id, params) => {
-  let query = 'UPDATE jobs '
-  query += 'SET '
+  let query = 'UPDATE jobs SET '
   let keys = []
   const paramsValues = []
   for (const [key, value] of Object.entries(params)) {
