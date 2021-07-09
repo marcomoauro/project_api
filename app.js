@@ -13,8 +13,8 @@ app.use(bodyParserMiddleware)
 app.use(requestLoggerMiddleware)
 
 //routes
-require('./app/routes/project')(app)
-require('./app/routes/job')(app)
+app.use(require('./app/routes/project'))
+app.use(require('./app/routes/job'))
 
 app.listen(process.env.PORT || 3000)
 

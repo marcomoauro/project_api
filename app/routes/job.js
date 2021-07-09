@@ -1,6 +1,8 @@
+const express = require('express')
+const router = express.Router()
 const controller = require('../controllers/job')
 
-module.exports = (app) => {
-  app.get('/jobs', controller.getJobs)
-  app.put('/job/:id', controller.updateJob)
-}
+router.get('/jobs', controller.getJobs)
+router.put('/job/:id', controller.updateJob)
+
+module.exports = router
