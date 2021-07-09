@@ -3,8 +3,8 @@ const router = express.Router()
 const controller = require('../controllers/project')
 const bodyValidatorMiddleware = require('../middlewares/body_validator')
 
-router.post('/projects', bodyValidatorMiddleware, controller.createProject)
-router.get('/projects/:id', controller.getProjectById)
-router.get('/projects', controller.getProjects)
+router.post('/', bodyValidatorMiddleware, controller.createProject)
+router.get('/', controller.getProjects)
+router.get('/:id', controller.getProjectById)
 
 module.exports = router

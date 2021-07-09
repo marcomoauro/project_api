@@ -13,8 +13,8 @@ app.use(bodyParserMiddleware)
 app.use(requestLoggerMiddleware)
 
 //routes
-app.use(require('./app/routes/project'))
-app.use(require('./app/routes/job'))
+app.use('/projects', require('./app/routes/project'))
+app.use('/jobs', require('./app/routes/job'))
 
 app.listen(process.env.PORT || 3000)
 
