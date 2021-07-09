@@ -8,6 +8,7 @@ const getJobsByProjectId = async (projectId) => {
     [projectId])
 }
 
+// next step can be to introduce pagination to avoid heavy requests to db
 const getJobs = async (filters, sort_type) => {
   const [getJobsQuery, paramsValues] = buildGetJobsQuery(filters, sort_type)
   return db.query(getJobsQuery, paramsValues)

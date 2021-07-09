@@ -9,6 +9,10 @@ const createProject = async (request, response) => {
 
     logger.info(`Controllers::Project::createProject start`)
 
+    if (!jobs || jobs.length === 0) {
+      return response.status(400).json({ error: 'Specify at least one job' })
+    }
+
     const project = await projectCreator.createProject({ title })
     const jobsCreated = await Promise.all(jobs.map((job) => jobCreator.createJob(job, project.id) ))
 
