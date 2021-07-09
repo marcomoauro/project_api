@@ -1,4 +1,4 @@
-const logger = require('../lib/logger')
+const logger = require('../services/logger')
 const updater = require('../services/job/updater')
 const finder = require('../services/job/finder')
 

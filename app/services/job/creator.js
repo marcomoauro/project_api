@@ -1,4 +1,4 @@
-const logger = require('../../lib/logger')
+const logger = require('../logger')
 const db = require('../db')
 
 const createJob = async (job, projectId) => {

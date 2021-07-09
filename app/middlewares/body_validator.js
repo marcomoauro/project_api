@@ -5,7 +5,7 @@ const API_TO_SCHEMA = {
 }
 
 module.exports = (req, res, next) => {
-  const validator = ajv.getSchema(API_TO_SCHEMA[`${req.method}_${req.url}`])
+  const validator = ajv.getSchema(API_TO_SCHEMA[`${req.method}_${req.baseUrl}`])
   const validation = validator(req.body)
   if (validation) {
     next()
