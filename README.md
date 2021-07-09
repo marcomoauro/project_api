@@ -16,4 +16,4 @@ npm run start
 ```
 
 ## Postman
-In this link https://drive.google.com/file/d/1gYCNkoiGtDTryoBYqK1n9mitVIuGOAuh/view?usp=sharing is present a json file importable in Postman to try the api.
+In this link https://drive.google.com/file/d/1F9OGl7XyNqj-AlPq1ZbCesZNINLw0Xj4/view?usp=sharing is present a json file importable in Postman to try the api.
