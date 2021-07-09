@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {"type": "string"},
+    "jobs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "creationDate": {"type": "string"},
+          "price": {"type": "number"},
+          "status": {"enum": ["in preparation", "in progress", "delivered", "cancelled"]}
+        }
+      }
+    }
+  }
+}
